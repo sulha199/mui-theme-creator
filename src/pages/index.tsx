@@ -51,7 +51,7 @@ const IndexPage = () => {
               </Box>
             </Box>
 
-            <ThemeConfigDrawer />
+            {/* <ThemeConfigDrawer /> */}
           </ErrorBoundary>
         </Box>
         <SmallScreenWarning />

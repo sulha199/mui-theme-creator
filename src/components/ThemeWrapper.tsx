@@ -1,8 +1,9 @@
 import Paper from "@mui/material/Paper";
-import { StyledEngineProvider, ThemeProvider } from "@mui/material/styles";
+import { StyledEngineProvider, ThemeProvider, createTheme } from "@mui/material/styles";
 import React from "react";
 import { useSelector } from "react-redux";
 import { RootState } from "src/state/types";
+import { themeOptions } from "src/themeOptions";
 
 interface ThemeWrapperProps {
   children: React.ReactNode | React.ReactNodeArray
@@ -14,7 +15,10 @@ interface ThemeWrapperProps {
  * set by the theme editor sidebar
  */
 const ThemeWrapper = ({ children }: ThemeWrapperProps) => {
-  const themeObject = useSelector((state: RootState) => state.themeObject)
+  // below code is commented out as we use static theme
+  // const themeObject = useSelector((state: RootState) => state.themeObject)
+
+  const themeObject = createTheme(themeOptions);
 
   return (
     <StyledEngineProvider injectFirst>
