@@ -107,6 +107,16 @@ export default function ButtonsExample() {
           Save
         </Button>
       </Box>
+
+      <Typography variant="h6" id="buttons-with-icons">
+        Buttons size
+      </Typography>
+      <Box sx={groupStyle}>
+        <Button variant="contained">Default</Button>
+        <Button size="small" variant="contained" >Small</Button>
+        <Button size="medium" variant="contained">Medium</Button>
+        <Button size="large" variant="contained">Large</Button>
+      </Box>
     </div>
   );
 }
