@@ -83,6 +83,15 @@ export default function ChipExample() {
           onDelete={handleDelete}
           color="secondary"
         />
+        
+        <Stack direction="row" spacing={1}>
+          <Chip label="primary" color="primary" />
+          <Chip label="success" color="success" />
+          <Chip label="info" color="info" />
+          <Chip label="warning" color="warning" />          
+          <Chip label="error" color="error" />
+          <Chip label="default" color="default" />
+        </Stack>
       </Box>
 
       <Typography variant="h6">Outlined</Typography>
@@ -167,14 +176,6 @@ export default function ChipExample() {
         />
       </Box>
       <Stack spacing={1} alignItems="center">
-        <Stack direction="row" spacing={1}>
-          <Chip label="primary" color="primary" />
-          <Chip label="success" color="success" />
-          <Chip label="info" color="info" />
-          <Chip label="warning" color="warning" />          
-          <Chip label="error" color="error" />
-          <Chip label="default" color="default" />
-        </Stack>
         <Stack direction="row" spacing={1}>
           <Chip label="primary" color="primary" variant="outlined" />
           <Chip label="success" color="success" variant="outlined" />
