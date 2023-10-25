@@ -1,5 +1,5 @@
 import CloseIcon from "@mui/icons-material/Close";
-import { Box, IconButton } from "@mui/material";
+import { Alert, Box, IconButton } from "@mui/material";
 import Button from "@mui/material/Button";
 import SnackbarContent from "@mui/material/SnackbarContent";
 import React from "react";
@@ -41,6 +41,10 @@ export default function SnackbarExample() {
         }
         action={action}
       />
+      <Alert severity="error">This is an error message!</Alert>
+      <Alert severity="warning">This is a warning message!</Alert>
+      <Alert severity="info">This is an information message!</Alert>
+      <Alert severity="success">This is a success message!</Alert>
     </Box>
   )
 }

@@ -1,6 +1,6 @@
 import DoneIcon from "@mui/icons-material/Done";
 import FaceIcon from "@mui/icons-material/Face";
-import { Box, Typography } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 import Avatar from "@mui/material/Avatar";
 import Chip from "@mui/material/Chip";
 import React from "react";
@@ -166,6 +166,24 @@ export default function ChipExample() {
           color="secondary"
         />
       </Box>
+      <Stack spacing={1} alignItems="center">
+        <Stack direction="row" spacing={1}>
+          <Chip label="primary" color="primary" />
+          <Chip label="success" color="success" />
+          <Chip label="info" color="info" />
+          <Chip label="warning" color="warning" />          
+          <Chip label="error" color="error" />
+          <Chip label="default" color="default" />
+        </Stack>
+        <Stack direction="row" spacing={1}>
+          <Chip label="primary" color="primary" variant="outlined" />
+          <Chip label="success" color="success" variant="outlined" />
+          <Chip label="info" color="info" variant="outlined" />
+          <Chip label="warning" color="warning" variant="outlined" />          
+          <Chip label="error" color="error" variant="outlined" />
+          <Chip label="default" color="default" variant="outlined" />
+        </Stack>
+      </Stack>
     </>
   )
 }
