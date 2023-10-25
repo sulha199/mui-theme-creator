@@ -4,6 +4,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { RootState } from "src/state/types";
 import { themeOptions } from "src/themeOptions";
+import themeOptionsJson from 'src/theme.json';
 
 interface ThemeWrapperProps {
   children: React.ReactNode | React.ReactNodeArray
@@ -18,7 +19,7 @@ const ThemeWrapper = ({ children }: ThemeWrapperProps) => {
   // below code is commented out as we use static theme
   // const themeObject = useSelector((state: RootState) => state.themeObject)
 
-  const themeObject = createTheme(themeOptions);
+  const themeObject = createTheme(Object.keys(themeOptionsJson).length > 0 ? themeOptionsJson :themeOptions);
 
   return (
     <StyledEngineProvider injectFirst>
