@@ -14,8 +14,9 @@ const MuiComponentSamples = () => {
       </Typography>
       {componentSamples.map(({ id, title, component, docs }) => (
         <div key={id} id={id}>
-          <Grid container justifyContent="space-between" alignItems="center">
-            <Typography variant="h5" gutterBottom>
+          <Grid container justifyContent="space-between" alignItems="center"
+          borderBottom={'3px solid '} padding={'2rem 0 1rem 0'} marginBottom={'1rem'}>
+            <Typography variant="h5">
               {title}
             </Typography>
             <Button
