@@ -4,14 +4,14 @@ import KeyboardVoiceIcon from "@mui/icons-material/KeyboardVoice";
 import SaveIcon from "@mui/icons-material/Save";
 import { Box, Typography } from "@mui/material";
 import Button from "@mui/material/Button";
-import React from "react";
+import { BoxProps } from "@mui/system"
+import React from "react"
 
-const groupStyle = {
+const groupStyle: BoxProps["sx"] = {
+  display: "flex",
+  gap: "4px",
   mb: 2,
-  '& > *': {
-    m: 1
-  }
-};
+}
 
 export default function ButtonsExample() {
 
