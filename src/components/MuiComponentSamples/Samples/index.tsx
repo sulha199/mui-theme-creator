@@ -25,6 +25,7 @@ import TextFieldExample from "./TextField"
 import TableExample from "./Table"
 import ListExample from "./List"
 import TooltipExample from "./Tooltip"
+import ColorExample from "./Colors"
 
 // items skipped for now:
 // Button Group
@@ -34,6 +35,24 @@ import TooltipExample from "./Tooltip"
 
 // Alphabetically sorted list of all Material-UI component examples
 export default [
+  {
+    id: "Colors",
+    title: "Colors",
+    component: <ColorExample />,
+    docs: "https://mui.com/material-ui/customization/color/",
+  },
+  {
+    id: "Typography",
+    title: "Typography",
+    component: <TypographyExample />,
+    docs: "https://material-ui.com/components/typography/",
+  },
+  {
+    id: "Buttons",
+    title: "Buttons",
+    component: <ButtonExample />,
+    docs: "https://material-ui.com/components/buttons/",
+  },
   {
     id: "Accordion",
     title: "Accordion",
@@ -63,12 +82,6 @@ export default [
     title: "Bottom Navigation",
     component: <BottomNavigationExample />,
     docs: "https://material-ui.com/components/bottom-navigation/",
-  },
-  {
-    id: "Buttons",
-    title: "Buttons",
-    component: <ButtonExample />,
-    docs: "https://material-ui.com/components/buttons/",
   },
   {
     id: "Card",
@@ -183,11 +196,5 @@ export default [
     title: "Tooltip",
     component: <TooltipExample />,
     docs: "https://material-ui.com/components/tooltips/",
-  },
-  {
-    id: "Typography",
-    title: "Typography",
-    component: <TypographyExample />,
-    docs: "https://material-ui.com/components/typography/",
   },
 ]

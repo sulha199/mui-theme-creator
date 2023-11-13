@@ -8,9 +8,11 @@ import { BoxProps } from "@mui/system"
 import React from "react"
 
 const groupStyle: BoxProps["sx"] = {
-  display: "flex",
   gap: "4px",
   mb: 2,
+  "> *[class]  ": {
+    marginLeft: "4px",
+  },
 }
 
 export default function ButtonsExample() {
